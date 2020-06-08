@@ -3,4 +3,4 @@ RUN mkdir -p /root/KubeSphereDemo
 WORKDIR /root/KubeSphereDemo
 COPY . /root/KubeSphereDemo
 EXPOSE 3000
-CMD ["npm", "run", "serve"]
+CMD ["npm", "install", "start"]
