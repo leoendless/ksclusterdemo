@@ -1,7 +1,5 @@
 FROM node:12.10.0
-RUN mkdir -p /root/KubeSphereDemo
-WORKDIR /root/KubeSphereDemo
+WORKDIR /app
 RUN npm install
-COPY . /root/KubeSphereDemo
 EXPOSE 3000
 CMD ["npm", "install", "start"]
