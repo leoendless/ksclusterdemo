@@ -1,5 +1,7 @@
-FROM node:12.10.0
+FROM node:12-alpine
+RUN mkdir /app
 WORKDIR /app
+COPY . /app
 RUN npm install
 EXPOSE 3000
-CMD  node bin/www
+CMD ["npm", "run", "start"]
